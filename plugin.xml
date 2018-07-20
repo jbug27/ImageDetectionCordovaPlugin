@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    xmlns:android="http://schemas.android.com/apk/res/android"
     id="com.cloudoki.imagedetectionplugin"
-    version="0.0.2">
+    version="1.0.0">
     <name>Image Detection Plugin</name>
 
     <description>The ImageDetectionPlugin for Cordova enables the use of OpenCV SDK to detect an inputed image.</description>
@@ -33,7 +32,7 @@
            <param name="onload" value="true" />
          </feature>
       </config-file>
-      <config-file parent="/manifest" target="AndroidManifest.xml">
+      <config-file parent="/manifest" target="app/AndroidManifest.xml">
         <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="23" />
         <uses-permission android:name="android.permission.CAMERA" />
         <uses-permission android:name="android.permission.INTERNET" />
@@ -54,9 +53,9 @@
 
       <framework src="com.android.support:support-v4:+" />
       <framework src="com.android.support:appcompat-v7:+" />
-      <source-file src="src/android/libs/build-extras.gradle" target-dir="." />
-      <source-file src="src/android/libs/opencv-release.aar" target-dir="libs/" />
-      <source-file src="src/android/ImageDetectionPlugin.java" target-dir="src/com/cloudoki/imagedetectionplugin/" />
+      <source-file src="src/android/libs/build-extras.gradle" target-dir="app/" />
+      <source-file src="src/android/libs/opencv-release.aar" target-dir="app/libs/" />
+      <source-file src="src/android/ImageDetectionPlugin.java" target-dir="app/src/com/cloudoki/imagedetectionplugin/" />
     </platform>
 
     <!-- iOS -->
