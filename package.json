@@ -11,7 +11,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Cloudoki/ImageDetectionCordovaPlugin.git"
+    "url": "git+https://github.com/jbug27/ImageDetectionCordovaPlugin.git"
+    
   },
   "keywords": [
     "OpenCV",
